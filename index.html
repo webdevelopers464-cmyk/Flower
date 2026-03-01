@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+    <link rel="icon" href="logo.png">
+</head>
+<style>
+    body
+    {
+        background: #ececec;
+    }
+    .im
+    {
+        width: 100px;
+        border: 2px solid rgb(245, 245, 245);
+        border-radius: 50%;
+    }
+    .parent
+    {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        background: #fa53af;
+        color: #fff;
+        margin-bottom: 4px;
+    }
+    .container
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #5f0909;
+        color: #fff;
+        margin-bottom: 4px;
+    }
+    #main
+    {
+        font-size: larger;
+        flex-grow: .5;
+    }
+    .vintage
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    h1
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .img1
+    {
+        width: 170px;
+        height: 270px;
+        margin: 10px;
+        border-radius: 10px;
+        border: 2px solid ececec;
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    }
+    .img
+    {
+        transition: 1s;
+    }
+    .img1 img
+    {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .img:hover{
+        transform: scale(1.3);
+        z-index: 2;
+    }
+     #preloader
+  {
+    background: #000 url("./Spinner@1x-1.0s-200px-200px.gif") no-repeat center center; 
+    /* background-size: 60%; */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    overflow: visible;
+  }
+  .footer
+  {
+    background: #7c3f3f;
+    display: flex;
+    justify-content: space-around;
+  }
+  a
+  {
+    color: #fff;
+  }
+  h1, h2, h3, .child
+  {
+    cursor: pointer;
+  }
+  .ck
+  {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+</style>
+<body>
+    <div id="preloader"></div>
+    <iframe width="0.5px" height="1px" src="https://www.youtube.com/embed/KVbrHTRxgsk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+    <div id="top" class="parent">
+        <div class="child" id="main">Flowers</div>
+        <div class="child">Home</div>
+        <div class="child">About</div>
+        <div class="child">Contact</div>
+    </div>
+    <div class="container">
+        <div class="child"><h2>Flower</h2></div>
+        <div class="child">
+            <img src="Add a subheading.gif" class="im">
+        </div>
+        <div class="child">
+           <div class="ck">
+                vintage+
+                roses
+           </div>
+        </div>
+    </div>
+    <h1>Vintage</h1>
+    <div id="sec_main" class="vintage">
+        <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsjHbRL3gh8_ROzISfboSQhZ_ZAy3i6xZpkQ&s" class="img1">
+        </div>
+        <div class="img">
+            <img src="https://cdn.ecommercedns.uk/files/2/236502/1/55786811/artificial-red-gerbera-flower-stem.jpg" class="img1">
+        </div>
+        <div class="img">
+            <img src="https://chansilkflowers.com/cdn/shop/files/WhatsAppImage2024-01-11at3.15-PhotoRoom_3.jpg?v=1706909773&width=1445" class="img1">
+       </div>
+        <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KGGj31fgv6SXKy50i09wXJqrptsh16W6zA&s" class="img1">
+       </div>
+    </div>
+    <h1>fresh pink roses</h1>
+    <div class="vintage">
+        <div class="img">
+            <img src="https://media.istockphoto.com/id/1036309898/photo/light-pink-rose-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=L6wDLBndkrnWIZFmadK2otf7TvR93sLQw_WV0mwgeP8=" class="img1">
+        </div>
+        <div class="img">
+            <img src="https://media.istockphoto.com/id/494430675/vector/beautiful-red-rose-with-long-stem-isolated-on-white.jpg?s=612x612&w=0&k=20&c=BkUg0UX2kYCt6xj4ZJW3aSbKOB1PUJe-kdUyflIICGI=" class="img1">
+        </div>
+        <div class="img">
+            <img src="https://thumbs.dreamstime.com/b/red-rose-12748447.jpg" class="img1">
+       </div>
+        <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSadE02bYMsA-MUu2_PhKjIzXav_yiAYuGzyQ&s" class="img1">
+       </div>
+    </div>
+    <div id="foot" class="footer">
+        <h2>Flower</h2>
+        <div class="chil">
+            <ul>
+                <h3><a href="transitions.html">Home</a></h3>
+            </ul>
+            <li><a href="#top">header</li></a>
+            <li><a href="#sec_main">main</li></a>
+            <li><a href="#foot">footer</li></a>
+        </div>
+        <div class="chil">
+                <h3><a href="about.html">About</a></h3>
+        </div>
+    </div>
+     <script>
+        const loader = document.getElementById("preloader")
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
+      </script>
+</body>
+</html>
+<!-- 4 times -->
